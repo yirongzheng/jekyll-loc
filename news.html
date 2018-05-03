@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>学院动态新闻</h1>
+
+{% for post in site.posts %}
+
+<ul>
+    <li><a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></li>
+    {{post.meta}}
+</ul>
+
+{% endfor %}
